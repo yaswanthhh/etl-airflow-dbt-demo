@@ -1,0 +1,610 @@
+[0m02:29:28.526001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42a86cd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42a8cc050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42a86c3d0>]}
+
+
+============================== 02:29:28.530975 | c3be5b68-d054-4fba-9712-b41e17751c6d ==============================
+[0m02:29:28.530975 [info ] [MainThread]: Running with dbt=1.11.4
+[0m02:29:28.532440 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_cache_events': 'False', 'log_path': '/opt/airflow/dbt/auto_analytics/logs', 'warn_error': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'empty': 'None', 'profiles_dir': '/home/airflow/.dbt', 'fail_fast': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'version_check': 'True', 'debug': 'False', 'static_parser': 'True'}
+[0m02:29:28.542172 [info ] [MainThread]: dbt version: 1.11.4
+[0m02:29:28.543910 [info ] [MainThread]: python version: 3.11.9
+[0m02:29:28.545279 [info ] [MainThread]: python path: /opt/airflow/dbt_venv/bin/python3.11
+[0m02:29:28.546819 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[0m02:29:28.548000 [info ] [MainThread]: Using profiles dir at /home/airflow/.dbt
+[0m02:29:28.549741 [info ] [MainThread]: Using profiles.yml file at /home/airflow/.dbt/profiles.yml
+[0m02:29:28.550892 [info ] [MainThread]: Using dbt_project.yml file at /opt/airflow/dbt/auto_analytics/dbt_project.yml
+[0m02:29:28.616437 [info ] [MainThread]: Configuration:
+[0m02:29:28.618463 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m02:29:28.620751 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:29:28.622563 [info ] [MainThread]: Required dependencies:
+[0m02:29:28.624757 [debug] [MainThread]: Executing "git --help"
+[0m02:29:28.628924 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m02:29:28.630220 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m02:29:28.631243 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:29:28.632640 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/airflow/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:29:28.634336 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m02:29:28.635951 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.15940113, "process_in_blocks": "0", "process_kernel_time": 0.103648, "process_mem_max_rss": "105876", "process_out_blocks": "0", "process_user_time": 1.176007}
+[0m02:29:28.637258 [debug] [MainThread]: Command `dbt debug` failed at 02:29:28.637160 after 0.16 seconds
+[0m02:29:28.638433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42edec950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42eded090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f42a8d3b50>]}
+[0m02:29:28.639778 [debug] [MainThread]: Flushing usage events
+[0m02:29:29.079331 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:32:51.709479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75a64b290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75a64a2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75a64ba10>]}
+
+
+============================== 02:32:51.714951 | a50172bf-8f61-4eb5-92d9-0320505799d2 ==============================
+[0m02:32:51.714951 [info ] [MainThread]: Running with dbt=1.11.4
+[0m02:32:51.716380 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'no_print': 'None', 'use_colors': 'True', 'debug': 'False', 'target_path': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'write_json': 'True', 'profiles_dir': '/home/airflow/.dbt', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt build', 'printer_width': '80', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_path': '/opt/airflow/dbt/auto_analytics/logs', 'log_cache_events': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False'}
+[0m02:32:51.832721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f7593386d0>]}
+[0m02:32:51.874951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75d415e50>]}
+[0m02:32:51.877163 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m02:32:51.922372 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m02:32:51.927722 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:32:51.929037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f758ff69d0>]}
+[0m02:32:52.645072 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.auto_analytics.marts
+[0m02:32:52.651295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f758389cd0>]}
+[0m02:32:52.714682 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/auto_analytics/target/manifest.json
+[0m02:32:52.726305 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/auto_analytics/target/semantic_manifest.json
+[0m02:32:52.762141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f754c15f90>]}
+[0m02:32:52.763211 [info ] [MainThread]: Found 3 models, 2 sources, 464 macros
+[0m02:32:52.765373 [info ] [MainThread]: 
+[0m02:32:52.766427 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m02:32:52.767398 [info ] [MainThread]: 
+[0m02:32:52.768394 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m02:32:52.771577 [debug] [ThreadPool]: Acquiring new postgres connection 'list_warehouse'
+[0m02:32:52.815042 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m02:32:52.817268 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m02:32:52.818989 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:32:52.828919 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.010 seconds
+[0m02:32:52.830899 [debug] [ThreadPool]: On list_warehouse: Close
+[0m02:32:52.832807 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_warehouse, now list_warehouse_public)
+[0m02:32:52.837079 [debug] [ThreadPool]: Using postgres connection "list_warehouse_public"
+[0m02:32:52.838158 [debug] [ThreadPool]: On list_warehouse_public: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "list_warehouse_public"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'warehouse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m02:32:52.839479 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:32:52.846978 [debug] [ThreadPool]: SQL status: SELECT 45 in 0.007 seconds
+[0m02:32:52.849263 [debug] [ThreadPool]: On list_warehouse_public: ROLLBACK
+[0m02:32:52.850665 [debug] [ThreadPool]: On list_warehouse_public: Close
+[0m02:32:52.856978 [debug] [MainThread]: Using postgres connection "master"
+[0m02:32:52.858597 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m02:32:52.859972 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:32:52.867791 [debug] [MainThread]: SQL status: SELECT 4 in 0.008 seconds
+[0m02:32:52.870053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f754c3fed0>]}
+[0m02:32:52.871258 [debug] [MainThread]: On master: ROLLBACK
+[0m02:32:52.872482 [debug] [MainThread]: On master: COMMIT
+[0m02:32:52.873521 [debug] [MainThread]: Using postgres connection "master"
+[0m02:32:52.875398 [debug] [MainThread]: On master: COMMIT
+[0m02:32:52.877538 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m02:32:52.879805 [debug] [MainThread]: On master: Close
+[0m02:32:52.883815 [debug] [Thread-1 (]: Began running node model.auto_analytics.stg_vehicle_listings
+[0m02:32:52.884089 [debug] [Thread-2 (]: Began running node model.auto_analytics.stg_weather_hourly
+[0m02:32:52.885126 [info ] [Thread-1 (]: 1 of 3 START sql view model public.stg_vehicle_listings ........................ [RUN]
+[0m02:32:52.887226 [info ] [Thread-2 (]: 2 of 3 START sql view model public.stg_weather_hourly .......................... [RUN]
+[0m02:32:52.888981 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_warehouse_public, now model.auto_analytics.stg_vehicle_listings)
+[0m02:32:52.890355 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.auto_analytics.stg_weather_hourly'
+[0m02:32:52.891515 [debug] [Thread-1 (]: Began compiling node model.auto_analytics.stg_vehicle_listings
+[0m02:32:52.892692 [debug] [Thread-2 (]: Began compiling node model.auto_analytics.stg_weather_hourly
+[0m02:32:52.897899 [debug] [Thread-1 (]: Writing injected SQL for node "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:52.900697 [debug] [Thread-2 (]: Writing injected SQL for node "model.auto_analytics.stg_weather_hourly"
+[0m02:32:52.929555 [debug] [Thread-1 (]: Began executing node model.auto_analytics.stg_vehicle_listings
+[0m02:32:52.944508 [debug] [Thread-2 (]: Began executing node model.auto_analytics.stg_weather_hourly
+[0m02:32:52.951534 [debug] [Thread-1 (]: Writing runtime sql for node "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:52.954858 [debug] [Thread-2 (]: Writing runtime sql for node "model.auto_analytics.stg_weather_hourly"
+[0m02:32:52.990568 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:52.993092 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+
+  create view "warehouse"."public"."stg_vehicle_listings__dbt_tmp"
+    
+    
+  as (
+    select
+  listing_id,
+  date_trunc('hour', listing_ts) as ts_hour,
+  location,
+  make,
+  model,
+  vehicle_year,
+  price_sek::numeric as price_sek,
+  mileage_km::numeric as mileage_km
+from "warehouse"."raw"."vehicle_listings"
+  );
+[0m02:32:52.995079 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:32:52.996182 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:32:52.998690 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+
+  create view "warehouse"."public"."stg_weather_hourly__dbt_tmp"
+    
+    
+  as (
+    select
+  location,
+  ts_hour,
+  temperature_2m::numeric as temperature_2m,
+  precipitation::numeric as precipitation,
+  wind_speed_10m::numeric as wind_speed_10m,
+  weather_code::int as weather_code
+from "warehouse"."raw"."weather_hourly"
+  );
+[0m02:32:53.000999 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m02:32:53.002734 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.008 seconds
+[0m02:32:53.008232 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:53.009675 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+alter table "warehouse"."public"."stg_vehicle_listings" rename to "stg_vehicle_listings__dbt_backup"
+[0m02:32:53.009966 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m02:32:53.011142 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:32:53.013623 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:32:53.016618 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:53.018220 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+alter table "warehouse"."public"."stg_weather_hourly" rename to "stg_weather_hourly__dbt_backup"
+[0m02:32:53.019103 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+alter table "warehouse"."public"."stg_vehicle_listings__dbt_tmp" rename to "stg_vehicle_listings"
+[0m02:32:53.020389 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:32:53.021795 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:32:53.023970 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:32:53.033648 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: COMMIT
+[0m02:32:53.034941 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+alter table "warehouse"."public"."stg_weather_hourly__dbt_tmp" rename to "stg_weather_hourly"
+[0m02:32:53.036944 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:53.038683 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:32:53.039433 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: COMMIT
+[0m02:32:53.041205 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: COMMIT
+[0m02:32:53.043411 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:32:53.044792 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: COMMIT
+[0m02:32:53.045400 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m02:32:53.050849 [debug] [Thread-1 (]: Applying DROP to: "warehouse"."public"."stg_vehicle_listings__dbt_backup"
+[0m02:32:53.051267 [debug] [Thread-2 (]: SQL status: COMMIT in 0.005 seconds
+[0m02:32:53.056084 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:32:53.062761 [debug] [Thread-2 (]: Applying DROP to: "warehouse"."public"."stg_weather_hourly__dbt_backup"
+[0m02:32:53.067511 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+drop view if exists "warehouse"."public"."stg_vehicle_listings__dbt_backup" cascade
+[0m02:32:53.072323 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:32:53.075874 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+drop view if exists "warehouse"."public"."stg_weather_hourly__dbt_backup" cascade
+[0m02:32:53.077504 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m02:32:53.079718 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: Close
+[0m02:32:53.079978 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m02:32:53.081998 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f7541197d0>]}
+[0m02:32:53.083042 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: Close
+[0m02:32:53.084207 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public.stg_vehicle_listings ................... [[32mCREATE VIEW[0m in 0.19s]
+[0m02:32:53.085286 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75417e390>]}
+[0m02:32:53.086702 [debug] [Thread-1 (]: Finished running node model.auto_analytics.stg_vehicle_listings
+[0m02:32:53.087831 [info ] [Thread-2 (]: 2 of 3 OK created sql view model public.stg_weather_hourly ..................... [[32mCREATE VIEW[0m in 0.19s]
+[0m02:32:53.089596 [debug] [Thread-2 (]: Finished running node model.auto_analytics.stg_weather_hourly
+[0m02:32:53.090908 [debug] [Thread-1 (]: Began running node model.auto_analytics.fact_listing_weather_hourly
+[0m02:32:53.091903 [info ] [Thread-1 (]: 3 of 3 START sql view model public.fact_listing_weather_hourly ................. [RUN]
+[0m02:32:53.093316 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.auto_analytics.stg_vehicle_listings, now model.auto_analytics.fact_listing_weather_hourly)
+[0m02:32:53.094000 [debug] [Thread-1 (]: Began compiling node model.auto_analytics.fact_listing_weather_hourly
+[0m02:32:53.096677 [debug] [Thread-1 (]: Writing injected SQL for node "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.105235 [debug] [Thread-1 (]: Began executing node model.auto_analytics.fact_listing_weather_hourly
+[0m02:32:53.108813 [debug] [Thread-1 (]: Writing runtime sql for node "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.118732 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.119759 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listing_weather_hourly"} */
+
+  create view "warehouse"."public"."fact_listing_weather_hourly__dbt_tmp"
+    
+    
+  as (
+    with listings as (
+  select
+    location,
+    ts_hour,
+    count(*) as listings_cnt,
+    avg(price_sek) as avg_price_sek
+  from "warehouse"."public"."stg_vehicle_listings"
+  group by 1,2
+),
+weather as (
+  select * from "warehouse"."public"."stg_weather_hourly"
+)
+select
+  l.location,
+  l.ts_hour,
+  l.listings_cnt,
+  l.avg_price_sek,
+  w.temperature_2m,
+  w.precipitation,
+  w.wind_speed_10m,
+  w.weather_code
+from listings l
+left join weather w
+  on l.location = w.location
+ and l.ts_hour = w.ts_hour
+  );
+[0m02:32:53.120641 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:32:53.128496 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.008 seconds
+[0m02:32:53.131941 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.133149 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listing_weather_hourly"} */
+alter table "warehouse"."public"."fact_listing_weather_hourly__dbt_tmp" rename to "fact_listing_weather_hourly"
+[0m02:32:53.134640 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:32:53.136610 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: COMMIT
+[0m02:32:53.138517 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.140383 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: COMMIT
+[0m02:32:53.144017 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m02:32:53.146626 [debug] [Thread-1 (]: Applying DROP to: "warehouse"."public"."fact_listing_weather_hourly__dbt_backup"
+[0m02:32:53.148458 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listing_weather_hourly"
+[0m02:32:53.149976 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listing_weather_hourly"} */
+drop view if exists "warehouse"."public"."fact_listing_weather_hourly__dbt_backup" cascade
+[0m02:32:53.151656 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m02:32:53.154743 [debug] [Thread-1 (]: On model.auto_analytics.fact_listing_weather_hourly: Close
+[0m02:32:53.156833 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a50172bf-8f61-4eb5-92d9-0320505799d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75d4e7cd0>]}
+[0m02:32:53.158536 [info ] [Thread-1 (]: 3 of 3 OK created sql view model public.fact_listing_weather_hourly ............ [[32mCREATE VIEW[0m in 0.06s]
+[0m02:32:53.160255 [debug] [Thread-1 (]: Finished running node model.auto_analytics.fact_listing_weather_hourly
+[0m02:32:53.162305 [debug] [MainThread]: On master: COMMIT
+[0m02:32:53.163703 [debug] [MainThread]: Using postgres connection "master"
+[0m02:32:53.165418 [debug] [MainThread]: On master: COMMIT
+[0m02:32:53.166713 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:32:53.172577 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m02:32:53.173662 [debug] [MainThread]: On master: Close
+[0m02:32:53.174975 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:32:53.176350 [debug] [MainThread]: Connection 'model.auto_analytics.fact_listing_weather_hourly' was properly closed.
+[0m02:32:53.178485 [debug] [MainThread]: Connection 'model.auto_analytics.stg_weather_hourly' was properly closed.
+[0m02:32:53.180479 [info ] [MainThread]: 
+[0m02:32:53.182494 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m02:32:53.185032 [debug] [MainThread]: Command end result
+[0m02:32:53.266897 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/auto_analytics/target/manifest.json
+[0m02:32:53.272430 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/auto_analytics/target/semantic_manifest.json
+[0m02:32:53.280404 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/auto_analytics/target/run_results.json
+[0m02:32:53.281817 [info ] [MainThread]: 
+[0m02:32:53.283323 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:32:53.284180 [info ] [MainThread]: 
+[0m02:32:53.284963 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m02:32:53.287029 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 1.6380773, "process_in_blocks": "0", "process_kernel_time": 0.298627, "process_mem_max_rss": "134104", "process_out_blocks": "8", "process_user_time": 2.082318}
+[0m02:32:53.288184 [debug] [MainThread]: Command `dbt build` succeeded at 02:32:53.288078 after 1.64 seconds
+[0m02:32:53.288875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75ee89c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75cdd2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f75eb40c90>]}
+[0m02:32:53.289860 [debug] [MainThread]: Flushing usage events
+[0m02:32:53.757776 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:37:25.540586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439e8aa050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439ecaea50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439ea92ad0>]}
+
+
+============================== 02:37:25.545622 | 30611a9a-9ac5-4b57-9845-4cd8d60c12b1 ==============================
+[0m02:37:25.545622 [info ] [MainThread]: Running with dbt=1.11.4
+[0m02:37:25.547374 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'introspect': 'True', 'profiles_dir': '/home/airflow/.dbt', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'quiet': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'use_colors': 'True', 'log_path': '/opt/airflow/dbt/auto_analytics/logs', 'empty': 'False', 'target_path': 'None', 'no_print': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True'}
+[0m02:37:25.668011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439d5778d0>]}
+[0m02:37:25.708953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439d5dd650>]}
+[0m02:37:25.710904 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m02:37:25.755051 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m02:37:25.915311 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m02:37:25.916505 [debug] [MainThread]: Partial parsing: added file: auto_analytics://models/marts/fact_listings_weather_hourly.sql
+[0m02:37:25.917495 [debug] [MainThread]: Partial parsing: deleted file: auto_analytics://models/staging/fact_listing_weather_hourly.sql
+[0m02:37:26.086917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439c500450>]}
+[0m02:37:26.178060 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/auto_analytics/target/manifest.json
+[0m02:37:26.183384 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/auto_analytics/target/semantic_manifest.json
+[0m02:37:26.207329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439c5414d0>]}
+[0m02:37:26.208318 [info ] [MainThread]: Found 3 models, 2 sources, 464 macros
+[0m02:37:26.210342 [info ] [MainThread]: 
+[0m02:37:26.211492 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m02:37:26.212163 [info ] [MainThread]: 
+[0m02:37:26.213118 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m02:37:26.216419 [debug] [ThreadPool]: Acquiring new postgres connection 'list_warehouse'
+[0m02:37:26.239267 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m02:37:26.240882 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m02:37:26.241985 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:37:26.252119 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.010 seconds
+[0m02:37:26.255179 [debug] [ThreadPool]: On list_warehouse: Close
+[0m02:37:26.258056 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_warehouse, now list_warehouse_public)
+[0m02:37:26.262088 [debug] [ThreadPool]: Using postgres connection "list_warehouse_public"
+[0m02:37:26.263550 [debug] [ThreadPool]: On list_warehouse_public: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "list_warehouse_public"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'warehouse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m02:37:26.264499 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:37:26.272079 [debug] [ThreadPool]: SQL status: SELECT 45 in 0.008 seconds
+[0m02:37:26.274193 [debug] [ThreadPool]: On list_warehouse_public: ROLLBACK
+[0m02:37:26.275378 [debug] [ThreadPool]: On list_warehouse_public: Close
+[0m02:37:26.281658 [debug] [MainThread]: Using postgres connection "master"
+[0m02:37:26.282856 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m02:37:26.283750 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:37:26.290658 [debug] [MainThread]: SQL status: SELECT 4 in 0.007 seconds
+[0m02:37:26.292187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439c175e10>]}
+[0m02:37:26.293148 [debug] [MainThread]: On master: ROLLBACK
+[0m02:37:26.294060 [debug] [MainThread]: On master: COMMIT
+[0m02:37:26.295053 [debug] [MainThread]: Using postgres connection "master"
+[0m02:37:26.296001 [debug] [MainThread]: On master: COMMIT
+[0m02:37:26.297239 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m02:37:26.298095 [debug] [MainThread]: On master: Close
+[0m02:37:26.301397 [debug] [Thread-1 (]: Began running node model.auto_analytics.stg_vehicle_listings
+[0m02:37:26.301675 [debug] [Thread-2 (]: Began running node model.auto_analytics.stg_weather_hourly
+[0m02:37:26.302289 [info ] [Thread-1 (]: 1 of 3 START sql view model public.stg_vehicle_listings ........................ [RUN]
+[0m02:37:26.304117 [info ] [Thread-2 (]: 2 of 3 START sql view model public.stg_weather_hourly .......................... [RUN]
+[0m02:37:26.305952 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_warehouse_public, now model.auto_analytics.stg_vehicle_listings)
+[0m02:37:26.307040 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.auto_analytics.stg_weather_hourly'
+[0m02:37:26.307994 [debug] [Thread-1 (]: Began compiling node model.auto_analytics.stg_vehicle_listings
+[0m02:37:26.308881 [debug] [Thread-2 (]: Began compiling node model.auto_analytics.stg_weather_hourly
+[0m02:37:26.314118 [debug] [Thread-1 (]: Writing injected SQL for node "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.316931 [debug] [Thread-2 (]: Writing injected SQL for node "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.325981 [debug] [Thread-1 (]: Began executing node model.auto_analytics.stg_vehicle_listings
+[0m02:37:26.328121 [debug] [Thread-2 (]: Began executing node model.auto_analytics.stg_weather_hourly
+[0m02:37:26.348064 [debug] [Thread-1 (]: Writing runtime sql for node "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.350462 [debug] [Thread-2 (]: Writing runtime sql for node "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.366690 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.373524 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+
+  create view "warehouse"."public"."stg_vehicle_listings__dbt_tmp"
+    
+    
+  as (
+    select
+  listing_id,
+  date_trunc('hour', listing_ts) as ts_hour,
+  location,
+  make,
+  model,
+  vehicle_year,
+  price_sek::numeric as price_sek,
+  mileage_km::numeric as mileage_km
+from "warehouse"."raw"."vehicle_listings"
+  );
+[0m02:37:26.374313 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.380456 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:37:26.384168 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+
+  create view "warehouse"."public"."stg_weather_hourly__dbt_tmp"
+    
+    
+  as (
+    select
+  location,
+  ts_hour,
+  temperature_2m::numeric as temperature_2m,
+  precipitation::numeric as precipitation,
+  wind_speed_10m::numeric as wind_speed_10m,
+  weather_code::int as weather_code
+from "warehouse"."raw"."weather_hourly"
+  );
+[0m02:37:26.386629 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m02:37:26.391974 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.012 seconds
+[0m02:37:26.396693 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.397814 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+alter table "warehouse"."public"."stg_vehicle_listings" rename to "stg_vehicle_listings__dbt_backup"
+[0m02:37:26.398613 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.012 seconds
+[0m02:37:26.399510 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:37:26.401598 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.403746 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.404758 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+alter table "warehouse"."public"."stg_weather_hourly" rename to "stg_weather_hourly__dbt_backup"
+[0m02:37:26.405835 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+alter table "warehouse"."public"."stg_vehicle_listings__dbt_tmp" rename to "stg_vehicle_listings"
+[0m02:37:26.407771 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:37:26.408441 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:37:26.410409 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.419679 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: COMMIT
+[0m02:37:26.420380 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+alter table "warehouse"."public"."stg_weather_hourly__dbt_tmp" rename to "stg_weather_hourly"
+[0m02:37:26.421372 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.423089 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:37:26.423597 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: COMMIT
+[0m02:37:26.425040 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: COMMIT
+[0m02:37:26.426882 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.427703 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: COMMIT
+[0m02:37:26.428632 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m02:37:26.432862 [debug] [Thread-1 (]: Applying DROP to: "warehouse"."public"."stg_vehicle_listings__dbt_backup"
+[0m02:37:26.433164 [debug] [Thread-2 (]: SQL status: COMMIT in 0.004 seconds
+[0m02:37:26.437708 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.stg_vehicle_listings"
+[0m02:37:26.440227 [debug] [Thread-2 (]: Applying DROP to: "warehouse"."public"."stg_weather_hourly__dbt_backup"
+[0m02:37:26.441858 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_vehicle_listings"} */
+drop view if exists "warehouse"."public"."stg_vehicle_listings__dbt_backup" cascade
+[0m02:37:26.443289 [debug] [Thread-2 (]: Using postgres connection "model.auto_analytics.stg_weather_hourly"
+[0m02:37:26.450438 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.stg_weather_hourly"} */
+drop view if exists "warehouse"."public"."stg_weather_hourly__dbt_backup" cascade
+[0m02:37:26.453008 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.004 seconds
+[0m02:37:26.455417 [debug] [Thread-1 (]: On model.auto_analytics.stg_vehicle_listings: Close
+[0m02:37:26.455718 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m02:37:26.458105 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439d501bd0>]}
+[0m02:37:26.459250 [debug] [Thread-2 (]: On model.auto_analytics.stg_weather_hourly: Close
+[0m02:37:26.460603 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public.stg_vehicle_listings ................... [[32mCREATE VIEW[0m in 0.15s]
+[0m02:37:26.461659 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439c588450>]}
+[0m02:37:26.462854 [debug] [Thread-1 (]: Finished running node model.auto_analytics.stg_vehicle_listings
+[0m02:37:26.463773 [info ] [Thread-2 (]: 2 of 3 OK created sql view model public.stg_weather_hourly ..................... [[32mCREATE VIEW[0m in 0.15s]
+[0m02:37:26.465651 [debug] [Thread-2 (]: Finished running node model.auto_analytics.stg_weather_hourly
+[0m02:37:26.467641 [debug] [Thread-1 (]: Began running node model.auto_analytics.fact_listings_weather_hourly
+[0m02:37:26.469570 [info ] [Thread-1 (]: 3 of 3 START sql table model public.fact_listings_weather_hourly ............... [RUN]
+[0m02:37:26.471489 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.auto_analytics.stg_vehicle_listings, now model.auto_analytics.fact_listings_weather_hourly)
+[0m02:37:26.473574 [debug] [Thread-1 (]: Began compiling node model.auto_analytics.fact_listings_weather_hourly
+[0m02:37:26.476406 [debug] [Thread-1 (]: Writing injected SQL for node "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.493564 [debug] [Thread-1 (]: Began executing node model.auto_analytics.fact_listings_weather_hourly
+[0m02:37:26.507159 [debug] [Thread-1 (]: Writing runtime sql for node "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.531948 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.533903 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listings_weather_hourly"} */
+
+  
+    
+
+  create  table "warehouse"."public"."fact_listings_weather_hourly__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with listings as (
+  select
+    location,
+    ts_hour,
+    count(*) as listings_cnt,
+    avg(price_sek) as avg_price_sek
+  from "warehouse"."public"."stg_vehicle_listings"
+  group by 1,2
+),
+weather as (
+  select * from "warehouse"."public"."stg_weather_hourly"
+)
+select
+  l.location,
+  l.ts_hour,
+  l.listings_cnt,
+  l.avg_price_sek,
+  w.temperature_2m,
+  w.precipitation,
+  w.wind_speed_10m,
+  w.weather_code
+from listings l
+left join weather w
+  on l.location = w.location
+ and l.ts_hour = w.ts_hour
+  );
+  
+[0m02:37:26.536000 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:37:26.551683 [debug] [Thread-1 (]: SQL status: SELECT 3 in 0.016 seconds
+[0m02:37:26.557321 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.558716 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listings_weather_hourly"} */
+alter table "warehouse"."public"."fact_listings_weather_hourly__dbt_tmp" rename to "fact_listings_weather_hourly"
+[0m02:37:26.560890 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m02:37:26.562831 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: COMMIT
+[0m02:37:26.564815 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.565973 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: COMMIT
+[0m02:37:26.570241 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m02:37:26.572812 [debug] [Thread-1 (]: Applying DROP to: "warehouse"."public"."fact_listings_weather_hourly__dbt_backup"
+[0m02:37:26.575689 [debug] [Thread-1 (]: Using postgres connection "model.auto_analytics.fact_listings_weather_hourly"
+[0m02:37:26.577647 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "auto_analytics", "target_name": "dev", "node_id": "model.auto_analytics.fact_listings_weather_hourly"} */
+drop table if exists "warehouse"."public"."fact_listings_weather_hourly__dbt_backup" cascade
+[0m02:37:26.579231 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m02:37:26.581193 [debug] [Thread-1 (]: On model.auto_analytics.fact_listings_weather_hourly: Close
+[0m02:37:26.583409 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30611a9a-9ac5-4b57-9845-4cd8d60c12b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439844a050>]}
+[0m02:37:26.585021 [info ] [Thread-1 (]: 3 of 3 OK created sql table model public.fact_listings_weather_hourly .......... [[32mSELECT 3[0m in 0.11s]
+[0m02:37:26.586702 [debug] [Thread-1 (]: Finished running node model.auto_analytics.fact_listings_weather_hourly
+[0m02:37:26.589367 [debug] [MainThread]: On master: COMMIT
+[0m02:37:26.590061 [debug] [MainThread]: Using postgres connection "master"
+[0m02:37:26.590776 [debug] [MainThread]: On master: COMMIT
+[0m02:37:26.592014 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:37:26.598256 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m02:37:26.599858 [debug] [MainThread]: On master: Close
+[0m02:37:26.601358 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:37:26.602623 [debug] [MainThread]: Connection 'model.auto_analytics.fact_listings_weather_hourly' was properly closed.
+[0m02:37:26.603752 [debug] [MainThread]: Connection 'model.auto_analytics.stg_weather_hourly' was properly closed.
+[0m02:37:26.604952 [info ] [MainThread]: 
+[0m02:37:26.607283 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.39 seconds (0.39s).
+[0m02:37:26.609182 [debug] [MainThread]: Command end result
+[0m02:37:26.654876 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt/auto_analytics/target/manifest.json
+[0m02:37:26.664635 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt/auto_analytics/target/semantic_manifest.json
+[0m02:37:26.675561 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt/auto_analytics/target/run_results.json
+[0m02:37:26.677547 [info ] [MainThread]: 
+[0m02:37:26.679444 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:37:26.681233 [info ] [MainThread]: 
+[0m02:37:26.683031 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m02:37:26.685090 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 1.1926711, "process_in_blocks": "0", "process_kernel_time": 0.219354, "process_mem_max_rss": "131012", "process_out_blocks": "0", "process_user_time": 1.754681}
+[0m02:37:26.686694 [debug] [MainThread]: Command `dbt build` succeeded at 02:37:26.686608 after 1.19 seconds
+[0m02:37:26.688358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439e832510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439e853b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e439ecaebd0>]}
+[0m02:37:26.690202 [debug] [MainThread]: Flushing usage events
+[0m02:37:27.111756 [debug] [MainThread]: An error was encountered while trying to flush usage events
